@@ -66,14 +66,6 @@ input.form-control {
 	padding-left: 0;
 }
 
-img.img-circle {
-	height: 150px;
-	display: block;
-	margin: auto;
-	border: 5px solid white;
-	box-shadow: 0 1px 3px 1px rgba(0,0,0,0.16);
-}
-
 /* xs */
 @media(max-width:767px) {
 	.hello {
@@ -85,13 +77,13 @@ img.img-circle {
 	}
 }
 /* sm */
-@media(min-width:768px){
+@media(min-width:768px) {
 	.hello {
 		color: green;
 	}
 }
 /* md */
-@media(min-width:992px){
+@media(min-width:992px) {
 	.hello {
 		color: orange;
 	}
@@ -106,7 +98,7 @@ img.img-circle {
 	}
 }
 /* lg */
-@media(min-width:1200px){
+@media(min-width:1200px) {
 	.hello {
 		color: cyan;
 	}
