@@ -1,0 +1,13 @@
+div.thumbnail img.crop {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.crop img {
+    margin: -190px 0px 0px 0px;
+}
+
+.fa-8x {
+    font-size: 8em;
+}

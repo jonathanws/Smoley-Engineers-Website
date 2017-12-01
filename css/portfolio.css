@@ -1,0 +1,10 @@
+.card {
+    margin-bottom: 15px;
+}
+.card p {
+    margin-top: 10px;
+}
+
+h3, h5 {
+    display: inline;
+}
