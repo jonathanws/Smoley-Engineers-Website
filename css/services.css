@@ -11,3 +11,8 @@ div.thumbnail img.crop {
 .fa-8x {
     font-size: 8em;
 }
+
+a[data-toggle]:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

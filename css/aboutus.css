@@ -1,3 +1,10 @@
+p {
+	padding: 4px 0;
+}
+h5 {
+	color: #5688c7;
+}
+
 img.img-circle {
 	height: 150px;
 	display: block;
@@ -6,8 +13,8 @@ img.img-circle {
 	box-shadow: 0 1px 3px 1px rgba(0,0,0,0.16);
 }
 
-/* lg */
-@media(min-width:1200px) {
+/* md */
+@media(min-width:992px) {
 	.row.no-gutters .col-md-8 {
 		border-left: 1px solid #373F51; padding-left: 40px;
 	}

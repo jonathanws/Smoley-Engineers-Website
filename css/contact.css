@@ -1,16 +1,3 @@
-p {
-	padding: 4px;
-}
-
-h4 {
-	margin-bottom: 0;
-	color: #373F51;
-}
-h5 {
-	margin-top: 5px;
-	color: #5688c7;
-}
-
 #contactInfo {
 	line-height: 25px;
 }
@@ -68,9 +55,6 @@ input.form-control {
 
 /* xs */
 @media(max-width:767px) {
-	.hello {
-		color: blue;
-	}
 	form .col-xs-12 {
 		padding: 0 15px;
 		margin-bottom: 15px;
@@ -78,15 +62,9 @@ input.form-control {
 }
 /* sm */
 @media(min-width:768px) {
-	.hello {
-		color: green;
-	}
 }
 /* md */
 @media(min-width:992px) {
-	.hello {
-		color: orange;
-	}
 	form div.row {
 		margin-bottom: 20px;
 	}
@@ -99,7 +77,4 @@ input.form-control {
 }
 /* lg */
 @media(min-width:1200px) {
-	.hello {
-		color: cyan;
-	}
 }
