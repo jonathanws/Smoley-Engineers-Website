@@ -1,11 +1,3 @@
-/*
-* Example usage
-*
-* html {
-*	background-color: material-color(red);		// color variant not required, 500 is default
-*	background-color: material-color(red, 900);
-* }
-*/
 p {
   padding: 4px 0;
 }
