@@ -1,0 +1,20 @@
+@import 'material colors/material-colors';
+
+p {
+	padding: 4px 0;
+}
+
+img.img-circle {
+	height: 150px;
+	display: block;
+	margin: auto;
+	border: 5px solid white;
+	box-shadow: 0 1px 3px 1px rgba(0,0,0,0.16);
+}
+
+/* md */
+@media(min-width:992px) {
+	.row.no-gutters .col-md-8 {
+		border-left: 2px solid $primary-color; padding-left: 40px;
+	}
+}

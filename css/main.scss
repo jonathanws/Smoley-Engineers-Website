@@ -1,0 +1,89 @@
+@import 'material colors/material-colors';
+
+body {
+	font-family: 'Segoe UI';
+	background-color: white;
+	color: material-color(grey, 900);
+	font-weight: 500;
+	&>.container {
+		background-color: material-color(grey, 200);
+	}
+}
+
+nav {
+	background-color: $primary-color;
+	&.navbar {
+		margin-bottom: 0;
+	}
+	.navbar-header a {
+		color: white;
+	}
+	.navbar-nav>li {
+		&>a {
+			color: white;
+			&:focus {
+				background-color: material-color($primary-color-family, 300);
+			}
+			&:hover {
+				background-color: material-color($primary-color-family, 400);
+			}
+		}
+	}
+	.icon-bar {
+		border: 1px solid white;
+	}
+}
+
+a {
+	color: $primary-color;
+	&:hover, &:focus {
+		color: $primary-color-dark;
+	}
+}
+
+h1 {
+	color: $primary-color;
+	font-size: 50px;
+	margin: 30px 0 50px 0;
+}
+
+footer {
+	padding: 40px;
+	background-color: $primary-color-dark;
+	div {
+		font-weight: 500;
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	span {
+		color: white;
+	}
+	a {
+		color: material-color(grey, 300);
+		padding: 0 5px;
+		&:hover, &:focus {
+			color: material-color(grey, 100);
+		}
+	}
+	p {
+		color: material-color(grey, 400);
+	}
+}
+
+.card {
+	border-radius: 4px;
+	background-color: white;
+	padding: 15px;
+	box-shadow: 0 1px 3px 1px rgba(0,0,0,0.16);
+}
+
+.accent {
+	color: $primary-color;
+}
+
+/* md */
+@media(min-width:992px) {
+	body>.container {
+		padding: 0 60px 120px 60px;
+	}
+}

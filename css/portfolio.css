@@ -1,10 +1,14 @@
+.container>p {
+	font-size: 18px; margin-bottom: 40px;
+}
+
 .card {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 .card p {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 h3, h5 {
-    display: inline;
+	display: inline;
 }

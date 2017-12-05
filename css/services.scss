@@ -1,0 +1,45 @@
+@import 'material colors/material-colors';
+
+div.thumbnail {
+	img.crop {
+		width: 100%;
+		height: 230px;
+		overflow: hidden;
+	}
+	.caption {
+		div.text-center {
+			margin-top: -70px;
+			div {
+				width: 128px;
+				height: 128px;
+				margin: auto;
+				border: 8px solid white;
+				z-index: 9000;
+				position: relative;
+				background-color: $primary-color;
+				i {
+					color: white;
+					&.fa-magic, &.fa-desktop {
+						font-size: 6em;
+						line-height: 128px;
+					}
+				}
+			}
+		}
+		h3 {
+			margin-top: 0;
+		}
+		a.text-center {
+			display: block;
+		}
+	}
+}
+
+.fa-8x {
+	font-size: 8em;
+}
+
+a[data-toggle]:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}

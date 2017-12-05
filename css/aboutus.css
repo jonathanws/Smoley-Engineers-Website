@@ -1,21 +1,30 @@
+/*
+* Example usage
+*
+* html {
+*	background-color: material-color(red);		// color variant not required, 500 is default
+*	background-color: material-color(red, 900);
+* }
+*/
 p {
-	padding: 4px 0;
-}
-h5 {
-	color: #5688c7;
+  padding: 4px 0;
 }
 
 img.img-circle {
-	height: 150px;
-	display: block;
-	margin: auto;
-	border: 5px solid white;
-	box-shadow: 0 1px 3px 1px rgba(0,0,0,0.16);
+  height: 150px;
+  display: block;
+  margin: auto;
+  border: 5px solid white;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16);
 }
 
 /* md */
-@media(min-width:992px) {
-	.row.no-gutters .col-md-8 {
-		border-left: 1px solid #373F51; padding-left: 40px;
-	}
+@media (min-width: 992px) {
+  .row.no-gutters .col-md-8 {
+    border-left: 2px solid #009688;
+    padding-left: 40px;
+  }
 }
+ 
+
+ /*# sourceMappingURL= aboutus.css.map */
