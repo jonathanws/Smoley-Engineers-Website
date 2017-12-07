@@ -25,10 +25,10 @@ $material-design-colors: (
 }
 
 
-$primary-color-family: teal;
+$primary-color-family: cyan;
 
-$primary-color: material-color($primary-color-family);
-$primary-color-dark: material-color($primary-color-family, 700);
+$primary-color: material-color($primary-color-family, 700);
+$primary-color-dark: material-color($primary-color-family, 900);
 
 // Example usage
 

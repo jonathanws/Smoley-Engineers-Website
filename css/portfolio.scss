@@ -1,0 +1,46 @@
+.container>p {
+	font-size: 18px; margin-bottom: 40px;
+}
+
+.card {
+	margin-bottom: 15px;
+	p {
+		margin-top: 10px;
+	}
+}
+
+h3, h5 {
+	display: inline;
+}
+
+.carousel {
+	background: #2f4357;
+	border-radius: 6px;
+	margin-top: 20px;
+	.carousel-inner {
+		border-radius: 6px;
+		div {
+			padding-left: 10%;
+			padding-right: 10%;
+			&:nth-child(1) {
+				background-image: url('..//assets//brewersalley.png');
+			}
+			h1 {
+				color: white;
+				display: inline-block;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+	.carousel-control {
+		&.left, &.right {
+			background-image: none;
+		}
+	}
+	.item {
+		min-height: 400px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+		img {
+			margin: 0 auto; /* Align slide image horizontally center */
+		}
+	}
+}

@@ -13,7 +13,7 @@ img.img-circle {
 /* md */
 @media (min-width: 992px) {
   .row.no-gutters .col-md-8 {
-    border-left: 2px solid #009688;
+    border-left: 2px solid #0097A7;
     padding-left: 40px;
   }
 }

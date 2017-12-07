@@ -2,6 +2,9 @@
 logs
 *.log
 
+# Mapping files generated from sass/css transpiling
+*.css.map
+
 # Runtime data
 pids
 *.pid
@@ -39,7 +42,8 @@ node_modules
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*

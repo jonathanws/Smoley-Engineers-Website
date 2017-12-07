@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link rel="stylesheet" href="../css/main.css"/>
 		<link rel="stylesheet" href="../css/portfolio.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="../assets/smoleyengineers.ico"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 
@@ -35,6 +35,36 @@
 
 		<!-- main container -->
 		<div class="container">
+
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="item active" data="#portfolio_brewersalley">
+						<h1>Brewer's Alley</h1>
+					</div>
+					<div class="item">
+						<h1>Another project</h1>
+					</div>
+					<div class="item">
+						<h1>And another project</h1>
+					</div>
+				</div>
+
+				<!-- Carousel controls -->
+				<a class="carousel-control left" href="#carousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="carousel-control right" href="#carousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+
 			<h1>Projects Portfolio</h1>
 
 			<div class="card hide">
@@ -85,7 +115,7 @@
 				<h5>- Leesburg, Loudoun County, Virginia</h5>
 				<p>Performed structural engineering analysis and design of building envelope, floors and roof framing systems, foundations and footings, and site area retaining wall systems for contemporary style, all concrete masonry private residence, featured as a Showcase Home by the Northeast Cement Shippers Association, for the Washington, D.C. metroplex area. Home was sited on a steeply sloping and heavily wooded site, and demonstrated innovative uses of various concrete masonry product lines and systems.</p>
 			</div>
-			<div class="card">
+			<div class="card" id="portfolio_brewersalley">
 				<h3>Outdoor Deck For Restaurant</h3>
 				<h5>- Frederick, Maryland</h5>
 				<p>Performed structural design and prepared construction documents for installation of a 1000 sq.ft. elevated wood deck structure overlooking Carroll Creek Park, for additional outdoor restaurant seating, in downtown Fredericktowne Historic District, Frederick City, MD.</p>
@@ -113,5 +143,6 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="../js/carousel-linker.js"></script>
 	</body>
 </html>
