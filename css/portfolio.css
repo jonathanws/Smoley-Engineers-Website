@@ -31,7 +31,7 @@ h3, h5 {
 }
 
 .carousel .carousel-inner div:nth-child(1) {
-  background-image: url("..//assets//brewersalley.png");
+  background-image: url("../assets/brewersalley.png");
 }
 
 .carousel .carousel-inner div h1 {
