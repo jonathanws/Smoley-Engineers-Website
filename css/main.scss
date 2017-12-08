@@ -14,6 +14,7 @@ nav {
 	background-color: $primary-color;
 	&.navbar {
 		margin-bottom: 0;
+		border-radius: 0;
 	}
 	.navbar-header a {
 		color: white;
