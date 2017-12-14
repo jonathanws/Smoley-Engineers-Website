@@ -1,5 +1,4 @@
 @import 'material colors/material-colors';
-
 div.thumbnail {
 	img.crop {
 		width: 100%;
@@ -19,7 +18,8 @@ div.thumbnail {
 				background-color: $primary-color;
 				i {
 					color: white;
-					&.fa-magic, &.fa-desktop {
+					&.fa-magic,
+					&.fa-desktop {
 						font-size: 6em;
 						line-height: 128px;
 					}

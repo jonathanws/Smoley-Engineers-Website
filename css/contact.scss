@@ -1,6 +1,7 @@
 #contactInfo {
 	line-height: 25px;
 }
+
 address {
 	--margin: 0;
 	line-height: 25px;
@@ -11,7 +12,7 @@ iframe {
 	width: 100%;
 	border: 1px solid #aaa;
 	border-radius: 4px;
-	box-shadow: 0 1px 3px 1px rgba(0,0,0,0.16);
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16);
 }
 
 div {
@@ -20,7 +21,8 @@ div {
 			margin-left: 5px;
 			&:first-child {
 				background-color: #4267b2;
-				&:focus, &:hover {
+				&:focus,
+				&:hover {
 					background-color: #375695;
 				}
 				&:active {
@@ -29,7 +31,8 @@ div {
 			}
 			&:nth-child(2) {
 				background-color: #0077b5;
-				&:focus, &:hover {
+				&:focus,
+				&:hover {
 					background-color: #005d8e;
 				}
 				&:active {
@@ -48,15 +51,17 @@ input.form-control {
 	&.no-gutters {
 		margin-right: 0;
 		margin-left: 0;
-		&>[class^="col-"],
-		&>[class*=" col-"] {
+		& > [class^="col-"],
+		& > [class*=" col-"] {
 			padding-right: 0;
 			padding-left: 0;
 		}
 	}
 }
 
+
 /* xs */
+
 @media(max-width:767px) {
 	form .col-xs-12 {
 		padding: 0 15px;
@@ -64,11 +69,14 @@ input.form-control {
 	}
 }
 
+
 /* sm */
-@media(min-width:768px) {
-}
+
+@media(min-width:768px) {}
+
 
 /* md */
+
 @media(min-width:992px) {
 	form {
 		div.row {
@@ -85,6 +93,7 @@ input.form-control {
 	}
 }
 
+
 /* lg */
-@media(min-width:1200px) {
-}
+
+@media(min-width:1200px) {}

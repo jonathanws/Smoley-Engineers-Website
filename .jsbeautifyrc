@@ -1,0 +1,21 @@
+{
+	"css": {
+		// Space around '>', '+', etc.
+		"space_around_combinator": true
+	},
+
+	// List of tags that should have an extra newline before them
+	"extra_liners": ["body", "/html"],
+
+	// Indent children tags of <html> tag
+	"indent_inner_html": true,
+
+	// Indent size
+	"indent_size": 4,
+
+	// Indent with tabs
+	"indent_with_tabs": true,
+
+	// Wrap limit
+	"wrap_line_length": 200
+}
