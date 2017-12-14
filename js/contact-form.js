@@ -1,5 +1,15 @@
 var URL = 'https://lxio1pynn3.execute-api.us-east-1.amazonaws.com/prod/smoleyEngineersSendContactEmail';
 
+$('#messageSentError button').click(function() {
+	$('#messageSentError').addClass('hide');
+	return false;
+});
+
+$('#messageSentSuccessful button').click(function() {
+	$('#messageSentSuccessful').addClass('hide');
+	return false;
+});
+
 $('#contact-us')
 	.submit(function(event) {
 		event.preventDefault();
