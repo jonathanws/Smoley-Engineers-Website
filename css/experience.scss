@@ -1,0 +1,23 @@
+@import 'material colors/material-colors';
+body > .container {
+	min-height: 980px;
+	.nav {
+		li {
+			line-height: 1.5em;
+			&:hover {
+				border-right: 2px solid $primary-color;
+			}
+			&.active {
+				border-right: 5px solid $primary-color;
+				transition: border-right .1s linear;
+				a {
+					color: $primary-color-dark;
+				}
+			}
+			a {
+				padding: 0;
+				margin: 10px 15px;
+			}
+		}
+	}
+}

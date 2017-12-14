@@ -1,0 +1,28 @@
+body > .container {
+  min-height: 980px;
+}
+
+body > .container .nav li {
+  line-height: 1.5em;
+}
+
+body > .container .nav li:hover {
+  border-right: 2px solid #0097A7;
+}
+
+body > .container .nav li.active {
+  border-right: 5px solid #0097A7;
+  transition: border-right .1s linear;
+}
+
+body > .container .nav li.active a {
+  color: #006064;
+}
+
+body > .container .nav li a {
+  padding: 0;
+  margin: 10px 15px;
+}
+ 
+
+ /*# sourceMappingURL= experience.css.map */

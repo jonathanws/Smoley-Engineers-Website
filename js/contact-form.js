@@ -1,4 +1,4 @@
-var URL = 'https://lxio1pynn3.execute-api.us-east-1.amazonaws.com/prod/smoleyEngineersSendContactEmail'
+var URL = 'https://lxio1pynn3.execute-api.us-east-1.amazonaws.com/prod/smoleyEngineersSendContactEmail';
 
 $('#contact-us')
 	.submit(function(event) {
@@ -6,6 +6,8 @@ $('#contact-us')
 
 		console.log('hey i\'m called');
 
+		var SUCCESS = 'success';
+		var ERROR = 'error';
 		var data = {
 			name: $('#form-name').val(),
 			company: $('#form-company').val(),
@@ -14,19 +16,40 @@ $('#contact-us')
 			message: $('#form-message').val()
 		};
 
+		// Show either success or error alert.  Removes other alert if already showing
+		function showAlert(status) {
+			var a;
+			var b;
+			if (status == SUCCESS) {
+				a = '#messageSentError';
+				b = '#messageSentSuccessful';
+			}
+			if (status == ERROR) {
+				a = '#messageSentSuccessful';
+				b = '#messageSentError';
+			} else {
+				console.log('ERROR, status is: ' + status);
+			}
+
+			if (!$(a).hasClass('hide')) {
+				$(a).addClass('hide');
+			}
+			$(b).removeClass('hide');
+		}
+
 		$.ajax({
 			type: 'POST',
 			url: URL,
 			dataType: 'json',
 			contentType: 'application/json',
 			data: JSON.stringify(data),
-			success: function (response) {
+			success: function(response) {
 				console.log('woo!', response);
-				$("#messageSentSuccessful").removeClass('hide');
+				showAlert(SUCCESS);
 			},
-			error: function (error) {
+			error: function(error) {
 				console.log('no dice', error);
-				$("#messageSentError").removeClass('hide');
+				showAlert(ERROR);
 			}
 		});
 	});

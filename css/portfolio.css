@@ -11,7 +11,8 @@
   margin-top: 10px;
 }
 
-h3, h5 {
+h3,
+h5 {
   display: inline;
 }
 
@@ -45,13 +46,13 @@ h3, h5 {
 }
 
 .carousel .item {
-  min-height: 400px;
   /* Prevent carousel from being distorted if for some reason image doesn't load */
+  min-height: 400px;
 }
 
 .carousel .item img {
-  margin: 0 auto;
   /* Align slide image horizontally center */
+  margin: 0 auto;
 }
  
 
