@@ -26,7 +26,7 @@
 						<li><a href="aboutus.html">About Us</a></li>
 						<li><a href="services.html">Services</a></li>
 						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="#">Experience</a></li>
+						<li><a href="experience.html">Experience</a></li>
 						<li class="active"><a href="#">Contact</a></li>
 					</ul>
 				</div>
@@ -55,6 +55,18 @@
 			<h1>Contact</h1>
 
 			<div class="row">
+
+				<div class="col-md-12 hide" id="messageSentSuccessful">
+					<div class="alert alert-success" role="alert">
+						<b>Message sent.</b> We will respond to your message soon
+					</div>
+				</div>
+
+				<div class="col-md-12 hide" id="messageSentError">
+					<div class="alert alert-danger" role="alert">
+						<b>Error sending message.</b> Something went wrong, try again soon.
+					</div>
+				</div>
 
 				<!-- contact information -->
 				<div class="col-md-4" id="contactInfo">
@@ -107,31 +119,31 @@
 
 				<!-- contact form -->
 				<div class="col-md-8">
-					<form>
+					<form id="contact-us">
 						<div class="row">
 							<div class="col-md-6 col-xs-12">
-								<input type="text" class="form-control" placeholder="Name">
+								<input placeholder="Name" id="form-name" class="form-control" type="text">
 							</div>
 							<div class="col-md-6 col-xs-12">
-								<input type="text" class="form-control" placeholder="Company">
+								<input placeholder="Company" id="form-company" class="form-control" type="text">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-xs-12">
-								<input type="text" class="form-control" placeholder="Email">
+								<input placeholder="Email" id="form-email" class="form-control" type="text">
 							</div>
 							<div class="col-md-6 col-xs-12">
-								<input type="text" class="form-control" placeholder="Phone">
+								<input placeholder="Phone" id="form-phone" class="form-control" type="text">
 							</div>
 						</div>
 						<div class="row" style="margin-bottom: 20px;">
 							<div class="col-md-12">
-								<textarea class="form-control" placeholder="Message" style="resize: none; height: 136px;"></textarea>
+								<textarea placeholder="Message" id="form-message" class="form-control" style="resize: none; height: 136px;"></textarea>
 							</div>
 						</div>
 						<div class="row" style="margin-bottom: 20px;">
 							<div class="col-md-12">
-								<button class="btn btn-success pull-right">Send Message</button>
+								<button class="btn btn-success pull-right" type="submit">Send Message</button>
 							</div>
 						</div>
 					</form>
@@ -166,7 +178,7 @@
 				<span>|</span>
 				<a href="portfolio.html">Portfolio</a>
 				<span>|</span>
-				<a href="#">Experience</a>
+				<a href="experience.html">Experience</a>
 				<span>|</span>
 				<a href="contact.html">Contact</a>
 			</div>
@@ -175,6 +187,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="../js/contact-form.js"></script>
 	</body>
 
 </html>
