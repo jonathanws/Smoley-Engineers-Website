@@ -1,4 +1,4 @@
-var URL = 'https://lxio1pynn3.execute-api.us-east-1.amazonaws.com/prod/smoleyEngineersSendContactEmail';
+var URL = 'https://lxio1pynn3.execute-api.us-east-1.amazonaws.com/prod/sendcontactemail';
 
 $('#messageSentError button').click(function() {
 	$('#messageSentError').addClass('hide');
