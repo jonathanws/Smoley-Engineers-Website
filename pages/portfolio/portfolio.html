@@ -37,8 +37,6 @@
 		<!-- main container -->
 		<div class="container" id="portfolioPage">
 
-			.carousel { .carousel-inner { div&:nth-child(1) { background-image: url('../brewersalley.png');
-
 			<div id="carousel" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -48,7 +46,7 @@
 
 				<!-- Wrapper for carousel items -->
 				<div class="carousel-inner">
-					<div v-for="slide in slides" class="item" :data="slide.data">
+					<div v-for="(slide, index) in slides" class="item" :class="{ active: index == 0 }">
 						<h1>{{slide.title}}</h1>
 					</div>
 				</div>
@@ -73,52 +71,6 @@
 				<p>{{d.text}}</p>
 			</div>
 
-			<!-- <div class="card">
-				<h3>Environmental Design And Resource Center</h3>
-				<h5> - Jessup, Maryland</h5>
-				<p>A multiple occupancy office and demonstration center for sustainable building materials, products and systems, combining new construction with an existing 19th century farmhouse, and utilizing structural
-					insulated panels, masonry trombe walls, sub-floor cellular slab duct and radiant floor heating systems, PV solar panels, composting toilets, natural daylighting, rainwater collection, engineered wood
-					products, and a living roof system.</p>
-			</div>
-			<div class="card">
-				<h3>Townhome Project</h3>
-				<h5> - Frederick, Maryland</h5>
-				<p>A five unit, three story townhouse structure above base level parking, consisting of light wood framing with trussed roof, brick veneer and vinyl siding, and concrete foundations, located within the
-					designated Fredericktowne Historic District. Design incorporates engineered wood products throughout.</p>
-			</div>
-			<div class="card">
-				<h3>Automotive Research Park</h3>
-				<h5>- Summit Point, West Virginia</h5>
-				<p>Structural engineering design and consulting services for automotive research park facilities, including a 39,360 sq.ft. Gasoline Alley garage facility, 1,058 sq.ft. Registration Building, 2,162 sq.ft.
-					Concession / Bath House, and 6,400 sq.ft. Race Control Building. Project incorporates use of passive solar heating, natural ventilation and daylighting strategies, structural insulated panels, and
-					ICF foundations.</p>
-			</div>
-			<div class="card">
-				<h3>"Market-On-Market" Public Market Facility</h3>
-				<h5>- Frederick, Maryland</h5>
-				<p>Assisted with planning and design concept studies, and prepared detailed development and construction cost estimates for proposed 16,400 SF public market facility in downtown Frederick.</p>
-			</div>
-			<div class="card">
-				<h3>Assessment Of Hurricane Damage To Agricultural Facilities And Infrastructure</h3>
-				<h5>- St. Kitts, Nevis, & Antigua, Eastern Carribean Basin</h5>
-				<p>An engineering and consulting services project for assessment of hurricane damage and preparation of remediation proposals for agricultural and agribusiness related facilities and infrastructure on
-					the islands of St. Kitts, Nevis and Antigua of the lower Carribean basin, in cooperation with the U.S. State Department's Agency for International Development and the U.S. Department of Agriculture's
-					Foreign Agricultural Service.</p>
-			</div>
-			<div class="card">
-				<h3>New Concrete Residence</h3>
-				<h5>- Leesburg, Loudoun County, Virginia</h5>
-				<p>Performed structural engineering analysis and design of building envelope, floors and roof framing systems, foundations and footings, and site area retaining wall systems for contemporary style, all
-					concrete masonry private residence, featured as a Showcase Home by the Northeast Cement Shippers Association, for the Washington, D.C. metroplex area. Home was sited on a steeply sloping and heavily
-					wooded site, and demonstrated innovative uses of various concrete masonry product lines and systems.</p>
-			</div>
-			<div class="card" id="portfolio_brewersalley">
-				<h3>Outdoor Deck For Restaurant</h3>
-				<h5>- Frederick, Maryland</h5>
-				<p>Performed structural design and prepared construction documents for installation of a 1000 sq.ft. elevated wood deck structure overlooking Carroll Creek Park, for additional outdoor restaurant seating,
-					in downtown Fredericktowne Historic District, Frederick City, MD.</p>
-			</div> -->
-
 		</div>
 		<!-- end main container -->
 
@@ -141,65 +93,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="carousel-linker.js"></script>
-		<script>
-			new Vue({
-				el: '#portfolioPage',
-				data: {
-					message: 'hey',
-					slides: [{
-							title: 'Brewer\'s Alley',
-							data: '#portfolio_brewersalley'
-						},
-						{
-							title: 'Another project',
-							data: ''
-						},
-						{
-							title: 'And another project',
-							data: ''
-						}
-					],
-					descriptions: [{
-							title: 'Environmental Design And Resource Center',
-							location: 'Jessup, Maryland',
-							text: 'A multiple occupancy office and demonstration center for sustainable building materials, products and systems, combining new construction with an existing 19th century farmhouse, and utilizing structural insulated panels, masonry trombe walls, sub-floor cellular slab duct and radiant floor heating systems, PV solar panels, composting toilets, natural daylighting, rainwater collection, engineered wood products, and a living roof system.'
-						},
-						{
-							title: 'Townhome Project',
-							location: 'Frederick, Maryland',
-							text: 'A five unit, three story townhouse structure above base level parking, consisting of light wood framing with trussed roof, brick veneer and vinyl siding, and concrete foundations, located within the designated Fredericktowne Historic District. Design incorporates engineered wood products throughout.'
-						},
-						{
-							title: 'Automotive Research Park',
-							location: 'Summit Point, West Virginia',
-							text: 'Structural engineering design and consulting services for automotive research park facilities, including a 39,360 sq.ft. Gasoline Alley garage facility, 1,058 sq.ft. Registration Building, 2,162 sq.ft. Concession / Bath House, and 6,400 sq.ft. Race Control Building. Project incorporates use of passive solar heating, natural ventilation and daylighting strategies, structural insulated panels, and ICF foundations.'
-						},
-						{
-							title: '"Market-On-Market" Public Market Facility',
-							location: 'Frederick, Maryland',
-							text: 'Assisted with planning and design concept studies, and prepared detailed development and construction cost estimates for proposed 16,400 SF public market facility in downtown Frederick.'
-						},
-						{
-							title: 'Assessment Of Hurricane Damage To Agricultural Facilities And Infrastructure',
-							location: 'St. Kitts, Nevis, & Antigua, Eastern Carribean Basin',
-							text: 'An engineering and consulting services project for assessment of hurricane damage and preparation of remediation proposals for agricultural and agribusiness related facilities and infrastructure on the islands of St. Kitts, Nevis and Antigua of the lower Carribean basin, in cooperation with the U.S. State Department\'s Agency for International Development and the U.S. Department of Agriculture\'s Foreign Agricultural Service.'
-						},
-						{
-							title: 'New Concrete Residence',
-							location: 'Leesburg, Loudoun County, Virginia',
-							text: 'Performed structural engineering analysis and design of building envelope, floors and roof framing systems, foundations and footings, and site area retaining wall systems for contemporary style, all concrete masonry private residence, featured as a Showcase Home by the Northeast Cement Shippers Association, for the Washington, D.C. metroplex area. Home was sited on a steeply sloping and heavily wooded site, and demonstrated innovative uses of various concrete masonry product lines and systems.'
-						},
-						{
-							id: 'portfolio_brewersalley',
-							title: 'Outdoor Deck For Restaurant',
-							location: 'Frederick, Maryland',
-							text: 'Performed structural design and prepared construction documents for installation of a 1000 sq.ft. elevated wood deck structure overlooking Carroll Creek Park, for additional outdoor restaurant seating, in downtown Fredericktowne Historic District, Frederick City, MD.'
-						}
-					]
-				}
-			});
-		</script>
+		<script src="portfolio.js"></script>
 	</body>
 
 </html>
