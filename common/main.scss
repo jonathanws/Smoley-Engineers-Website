@@ -1,10 +1,10 @@
 @import 'material-colors';
 body {
-	font-family: 'Segoe UI';
+	font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background-color: white;
 	color: material-color(grey, 900);
 	font-weight: 500;
-	&>.container {
+	& > .container {
 		background-color: material-color(grey, 200);
 	}
 }
@@ -18,8 +18,8 @@ nav {
 	.navbar-header a {
 		color: white;
 	}
-	.navbar-nav>li {
-		&>a {
+	.navbar-nav > li {
+		& > a {
 			color: white;
 			&:focus {
 				background-color: material-color($primary-color-family, 300);
@@ -87,7 +87,7 @@ footer {
 /* md */
 
 @media(min-width:992px) {
-	body>.container {
+	body > .container {
 		padding: 0 60px 120px 60px;
 	}
 }
